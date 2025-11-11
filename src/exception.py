@@ -21,15 +21,15 @@ class StudentPerformanceException(Exception):
 
 
 
-    
-""" 
+"""   Exception Handler and Logging Testing
+
 if __name__=="__main__":
     logging.info("--Enter Sudent Performance Exception testing---")
     try:
         a = 2025 + "Hello"
         print(a)
     except Exception as e:
+        logging.info("---Exit exception handling testing----")
         raise StudentPerformanceException(e,sys)
-    logging.info("---Exit exception handling testing----")
-
-"""    
+    
+"""
